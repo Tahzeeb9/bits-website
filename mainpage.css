@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.obox{
+    border:solid 1px;
+    height: 150px;
+    display: flex;
+}
+#inbox1,#inbox2{
+    border: solid 1px;
+    height: 150px; 
+}
+#inbox1{
+    width: 150px;
+}
+#inbox2{
+    width: 1800px;
+    text-align: center;
+}
+#clgname{
+    font-size: 60px;
+    color: red;
+}
+#scrollclg{
+    font-size: 30px;
+    font-weight: bold;
+    color: maroon;
+}
+#navbox{
+    border: solid 1px;
+    height: 50px;
+}
+ul li{
+    border: solid 1px;
+    height: 50px;
+    width: 155px;
+    float: left;
+    text-align: center;
+    line-height: 49px;
+    background-color: #5f426f;
+    margin-right: 2px;
+    margin-bottom: 1px;
+    border-radius: 10px;
+}
+ul{
+        list-style: none;
+}
+ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    text-decoration: none;
+}
+ul li ul li{
+    display: none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color:rgb(69, 133, 135);
+}
+.outerbox{
+    border: solid 1px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 400px;
+    z-index: -1;
+}
+#in1{
+    width: 700px;
+    background-image: url(bits1.png);
+    background-repeat: no-repeat;
+    background-size: 700px 400px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    10%{
+        background-image: url(bits2.png);
+    }
+    20%{
+        background-image: url(bits3.png);
+    }
+    30%{
+        background-image: url(bits4.png);
+    }
+    40%{
+        background-image: url(bits5.png);
+    }
+    50%{
+        background-image: url(bits6.png);
+    }
+    60%{
+        background-image: url(bits7.png);
+    }
+}
+#in2,#in3{
+    width: 300px;
+    text-align: center;
+}
+#placebox{
+    border: solid 1px;
+    height: 250px;
+    text-align: center;
+    color: rgb(130, 51, 51);
+    font-size: 20px;
+}
